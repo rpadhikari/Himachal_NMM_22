@@ -1,0 +1,28 @@
+This folder contains information about how to optimize the lattice constant
+of Silicon using pw calculation in scf calculation style. It contains the
+following files:
+
+=> a0.pdf # plot of total energy vs lattice constant a0 of Silicon
+
+=> alat.plot # Gnuplot script to render the plot
+
+=> alat.sh   # Quantum-Espresso input file embeded in bash script to
+for several scf calculation with changing lattice constants (-3% to +3%)
+of experimental value of 10.26254 Bohr. You need to make this file
+executable by issuing 'chmod a+x alat.sh' without quote.
+
+=> run.slurm  # SLURM job submission script. To submit job we use the command
+'sbatch run.slurm' without quote.
+
+=> spline.plot   # Gnuplot script to for fitting cubic spline interpolation
+It internally uses Levenberg–Marquardt algorithm. for further imformation
+please see the Wikipedia page on this
+https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm
+
+Congratulations! Now you are ready to submit the job on Suercomputer.
+
+sbatch run.slurm
+squeue
+
+
+ 
