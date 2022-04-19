@@ -5,5 +5,6 @@ phonons of Si in Diamond structure
   fildyn='Si.dyn'
   outdir='./'
   ldisp=.true.
+  reduce_io = .true.
   nq1=4, nq2=4, nq3=4
 /
