@@ -47,7 +47,7 @@ EOF
 mpirun -np 4 pw.x -nk 1 -npw 4 -inp scf.in > scf.out
 te=`grep ! scf.out | tail -1 | awk '{print $5}'`
 #ft=`grep 'l fo' scf.out | awk '{print $4}'`
-sxx=grep -A1 'l   s' scf.out | tail -1 | awk '{print $4}'`
+sxx=`grep -A1 'l   s' scf.out | tail -1 | awk '{print $4}'`
 echo "$ecut  $sxx" >> stress.dat
 echo "$ecut $te" >> etot.dat
 #echo "$ecut  $ft" >> force.dat
