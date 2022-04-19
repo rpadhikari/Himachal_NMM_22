@@ -1,0 +1,4 @@
+&bands
+  outdir='./'
+  filband='SiBands.out'
+/
