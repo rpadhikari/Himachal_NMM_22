@@ -9,8 +9,8 @@
 # set terminal type
 set term postscript enhanced color 'Helvetica-Bold,16'
 set output 'dos.ps'
-xmin=-4.0
-xmax=4.0
+xmin=-3.0
+xmax=3.0
 ymin=0.0
 ymax=3.5
 set xr [xmin : xmax]
