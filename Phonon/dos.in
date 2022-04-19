@@ -1,0 +1,11 @@
+&input
+  asr='simple'
+  amass(1)=28.085
+  flfrc='Si444.fc'
+  dos=.true.
+  fldos='phonon.dos'
+  nk1=30
+  nk2=30
+  nk3=30
+  ndos=200
+/
