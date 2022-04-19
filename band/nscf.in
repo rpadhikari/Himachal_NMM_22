@@ -3,6 +3,7 @@
     restart_mode='from_scratch'
     pseudo_dir = '../pseudo'
     outdir='./'
+    verbosity = 'high'
 !    disk_io='none'
 !    tstress=.true.
 !    tprnfor=.true.
