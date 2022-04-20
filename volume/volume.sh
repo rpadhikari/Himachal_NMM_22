@@ -22,7 +22,7 @@ cat > scf.in << EOF
 &control
     calculation='scf'
     restart_mode='from_scratch'
-    pseudo_dir = '/home/raja/pseudo'
+    pseudo_dir = '../pseudo'
     outdir='./'
     disk_io='none'
     tstress=.true.
